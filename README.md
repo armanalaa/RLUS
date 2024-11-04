@@ -1,5 +1,3 @@
-**Docker Instructions**
-
 Follow these steps to set up, build, and run the Docker container for this project. The containerized environment ensures that all dependencies are managed within Docker, providing a consistent and isolated setup.
 
 **1. Set Up Your Project Directory**
