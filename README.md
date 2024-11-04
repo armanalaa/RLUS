@@ -43,12 +43,10 @@ docker logs -f <project_name>
 -f: Follows the log output, displaying updates in real-time.
 <project_name>: Replace with the name of your Docker container.
 
-**5. Copying Results and Logs to Host System: After the container has completed its execution, you may need to retrieve the results and logs stored within the container. Use the following commands to copy these files to the host system:**
+**5. Copying Results and Logs to Host System: After the container has completed its execution, you may need to retrieve the results and logs stored within it. Use the following commands to copy these files to the host system:**
 
 [sudo] docker cp <project_name>:/app/results ./results
 [sudo] docker cp <project_name>:/app/logs ./logs
-docker cp <project_name>:/app/results ./results: Copies the results directory from the container to a local ./results folder.
-docker cp <project_name>:/app/logs ./logs: Copies the logs directory from the container to a local ./logs folder.
 
 [sudo]: Some systems may require sudo to access Docker commands, particularly on Linux. Remove [sudo] if not necessary on your system.
 
@@ -56,5 +54,3 @@ docker cp <project_name>:/app/logs ./logs: Copies the logs directory from the co
 
 **Sample Size (rho values):** Stored in the ./results folder on the host system after copying.
 **Execution Times: ** Logged and stored in the ./logs folder on the host system after copying.
-
-By following these steps, you can efficiently manage and monitor the containerized execution of this project, ensuring that results and logs are readily accessible on your host system.
