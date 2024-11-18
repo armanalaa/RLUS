@@ -68,10 +68,10 @@ project/
        
      b. Run the RLUS-BINARY-SEARCH Example: Inside the container or locally (if dependencies are installed):
        
-       ```bash
-        # Windows
-        docker run -v %cd%:/app RLUS-BINARY-SEARCH
-       ```
+     ```bash
+      # Windows
+      docker run -v %cd%:/app RLUS-BINARY-SEARCH
+     ```
    
        ```bash
         # Linux
