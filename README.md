@@ -52,6 +52,7 @@ Quick Start (Using RLUS-BINARY-SEARCH as an Example)
 ```bash
  git clone https://github.com/armanalaa/RLUS.git
  cd RLUS/RLUS-BINARY-SEARCH
+```
 
 2. Set up the environment: Use Docker for a consistent and isolated environment:
 
