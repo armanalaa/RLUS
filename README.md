@@ -61,22 +61,6 @@ project/
 - `Dockerfile`: Used to containerize the project to ensure the reproducibility of the environment.
 - `requirements.txt`: Lists the Python dependencies for the project: `numpy`, `pandas`, and `argparse`.
 
-
-
-- `data/`: Contains input datasets.
-
-- `scripts/`: Shell scripts for running, evaluating, and managing the RLUS algorithms.
- - `master_script.sh`: Orchestrates the parallel execution of various scripts, including run_20.sh to run_26.sh.
- - `measure_time.sh`: Tracks the time taken by master_script.sh and logs it into a time log file (master_script_time.log).
- - `run_20.sh` to `run_29.sh`: Executes specific Python-based computations with different configurations and epsilon ranges, logging the results for each range.
-
-- `results/`: Contains computed \rho outputs from the scripts, stored as CSV files:
-
-- `logs/`: Real-time execution logs.
-- `bootstrap.py`
-- `command_line_main.py`
-- `RLUS.py` 
-
 **How to Use This Repository**
 
 Quick Start (Using RLUS-BINARY-SEARCH as an Example)
