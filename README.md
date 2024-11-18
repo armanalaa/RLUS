@@ -73,10 +73,10 @@ project/
       docker run -v %cd%:/app RLUS-BINARY-SEARCH
      ```
    
-       ```bash
-        # Linux
-        docker run -v $(pwd):/app RLUS-BINARY-SEARCH
-       ```
+     ```bash
+      # Linux
+      docker run -v $(pwd):/app RLUS-BINARY-SEARCH
+     ```
 
 4. Check Live Log
 
