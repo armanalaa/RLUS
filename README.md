@@ -45,7 +45,15 @@ project/
 │   ├── `master_script.sh`    - Orchestrates the parallel execution of various scripts, including `run_20.sh` to `run_26.sh`.
 │   ├── `measure_time.sh`     - Tracks the time taken by `master_script.sh` and logs it into a time log file (`master_script_time.log`).
 │   ├── `run_20.sh`           - Executes specific Python-based computations with a specific configuration and epsilon range.
-│   └── ...                   - Additional `run_*` scripts with varying configurations.
+│   ├── `run_21.sh`           - Executes specific Python-based computations with a specific configuration and epsilon range.
+│   ├── `run_22.sh`           - Executes specific Python-based computations with a specific configuration and epsilon range.
+│   ├── `run_23.sh`           - Executes specific Python-based computations with a specific configuration and epsilon range.
+│   ├── `run_24.sh`           - Executes specific Python-based computations with a specific configuration and epsilon range.
+│   ├── `run_25.sh`           - Executes specific Python-based computations with a specific configuration and epsilon range.
+│   ├── `run_26.sh`           - Executes specific Python-based computations with a specific configuration and epsilon range.
+│   ├── `run_27.sh`           - Executes specific Python-based computations with a specific configuration and epsilon range.
+│   ├── `run_28.sh`           - Executes specific Python-based computations with a specific configuration and epsilon range.
+│   └── `run_29.sh`           - Executes specific Python-based computations with a specific configuration and epsilon range.
 ├── `bootstrap.py`            - Implements the bootstrap method for resampling and calculating confidence intervals.
 ├── `command_line_main.py`    - The main entry point for executing the RLUS algorithm via the command line.
 ├── `RLUS.py`                 - Contains the RLUS algorithm implementation.
