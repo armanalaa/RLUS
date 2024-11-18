@@ -72,25 +72,28 @@ project/
         # Windows
         docker run -v %cd%:/app RLUS-BINARY-SEARCH
        ```
+   
        ```bash
         # Linux
         docker run -v $(pwd):/app RLUS-BINARY-SEARCH
        ```
 
-3. Check Live Log*
+4. Check Live Log*
 
        ```bash
        docker logs -f RLUS-BINARY-SEARCH # Stream live logs from the Docker container.
        ```
+   
        ```bash
        docker logs RLUS-BINARY-SEARCH | tail -n 100 # retrieve the last 100 lines of logs from the RLUS-BINARY-SEARCH Docker container, aiding in monitoring and debugging
        ```
  
-4. Check Results
+6. Check Results
 
       ```bash    
       sudo docker cp RLUS-BINARY-SEARCH:/app/results .
       ```
+      
       ```bash
       sudo docker cp RLUS-BINARY-SEARCH:/app/logs .
      ```
