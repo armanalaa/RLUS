@@ -80,20 +80,20 @@ project/
 
   a. Building the Docker Image:
 
-    ```bash
-     docker build -t RLUS-BINARY-SEARCH .
-    ```
-    
-  b. Run the RLUS-BINARY-SEARCH Example: Inside the container or locally (if dependencies are installed):
-    
-    ```bash
-     # Windows
-     docker run -v %cd%:/app RLUS-BINARY-SEARCH
-    ```
-    ```bash
-     # Linux
-     docker run -v $(pwd):/app RLUS-BINARY-SEARCH
-    ```
+       ```bash
+        docker build -t RLUS-BINARY-SEARCH .
+       ```
+       
+     b. Run the RLUS-BINARY-SEARCH Example: Inside the container or locally (if dependencies are installed):
+       
+       ```bash
+        # Windows
+        docker run -v %cd%:/app RLUS-BINARY-SEARCH
+       ```
+       ```bash
+        # Linux
+        docker run -v $(pwd):/app RLUS-BINARY-SEARCH
+       ```
 
 3. Check Live Log*
 
