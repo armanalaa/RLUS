@@ -78,7 +78,7 @@ project/
         docker run -v $(pwd):/app RLUS-BINARY-SEARCH
        ```
 
-4. Check Live Log*
+4. Check Live Log
 
        ```bash
        docker logs -f RLUS-BINARY-SEARCH # Stream live logs from the Docker container.
