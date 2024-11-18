@@ -9,11 +9,8 @@ Rate limiting is critical for managing access to APIs, protecting resources, and
 **Use Cases**
 
 - Throttling API access for public and private services.
-
 - Supporting value-added services while protecting sensitive system metrics.
-
-- Preventing unauthorized analysis of service-level agreements.
-
+- Preventing unauthorized analysis of service-le
 - Efficiently setting query limits for APIs based on real-time data.
 
 **Repository Contents**
@@ -49,14 +46,16 @@ Quick Start (Using RLUS-BINARY-SEARCH as an Example)
 
 1. Clone the repository:
    
-```bash
- git clone https://github.com/armanalaa/RLUS.git
- cd RLUS/RLUS-BINARY-SEARCH
-```
-
-```bash
- cd RLUS/RLUS-BINARY-SEARCH
-```
+   ```bash
+    git clone https://github.com/armanalaa/RLUS.git
+      ```
+      ```bash
+    cd RLUS/RLUS-BINARY-SEARCH
+   ```
+   
+   ```bash
+    cd RLUS/RLUS-BINARY-SEARCH
+   ```
 
 2. Set up the environment: Use Docker for a consistent and isolated environment:
 
@@ -86,9 +85,14 @@ docker logs RLUS-BINARY-SEARCH | tail -n 100 # retrieve the last 100 lines of lo
 
  
 **Check Results**
-     
-- sudo docker cp RLUS-BINARY-SEARCH:/app/results .
-- sudo docker cp RLUS-BINARY-SEARCH:/app/logs .
+
+ ```bash    
+ sudo docker cp RLUS-BINARY-SEARCH:/app/results .
+
+    ```
+   ```bash
+ sudo docker cp RLUS-BINARY-SEARCH:/app/logs .
+    ```
 
   - The commands copy the results and log directories from the /app path inside the RLUS-BINARY-SEARCH Docker container to the current directory on your host system.
   - This lets you access the container's output files directly on your local machine.
