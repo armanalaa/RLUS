@@ -82,9 +82,7 @@ project/
        ```bash
        docker logs -f RLUS-BINARY-SEARCH # Stream live logs from the Docker container.
        ```
-       ```bash
-       docker logs RLUS-BINARY-SEARCH | tail -n 100 # retrieve the last 100 lines of logs from the RLUS-BINARY-SEARCH Docker container, aiding in monitoring and debugging
-       ```
+
  
 4. Check Results
 
