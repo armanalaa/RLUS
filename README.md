@@ -26,19 +26,28 @@ README.md: Documentation of the project.
 
 Each repository is structured as follows:
 
-data/: Contains input datasets.
+**Repository Contents**
 
-scripts/: Python and shell scripts for running, evaluating, and managing the RLUS algorithms.
+| Directory             | Description                                           |
+|-----------------------|-------------------------------------------------------|
+| `data/`               | Contains input datasets.                             |
+| `results/`            | Contains computed outputs in `.csv` format.          |
+| `logs/`               | Stores real-time execution logs.                     |
 
-- master_script.sh: Orchestrates the parallel execution of various scripts, including run_20.sh to run_26.sh.
 
-- measure_time.sh: Tracks the time taken by master_script.sh and logs it into a time log file (master_script_time.log).
+- data/: Contains input datasets.
 
-- run_20.sh to run_29.sh: Executes specific Python-based computations with different configurations and epsilon ranges, logging the results for each range.
+scripts/: Shell scripts for running, evaluating, and managing the RLUS algorithms.
 
-results/: Contains computed \rho outputs from the scripts, stored as CSV files:
+ - master_script.sh: Orchestrates the parallel execution of various scripts, including run_20.sh to run_26.sh.
 
-logs/: Real-time execution logs.
+ - measure_time.sh: Tracks the time taken by master_script.sh and logs it into a time log file (master_script_time.log).
+
+ - run_20.sh to run_29.sh: Executes specific Python-based computations with different configurations and epsilon ranges, logging the results for each range.
+
+- results/: Contains computed \rho outputs from the scripts, stored as CSV files:
+
+- logs/: Real-time execution logs.
 
 **How to Use This Repository**
 
