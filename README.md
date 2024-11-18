@@ -62,9 +62,9 @@ project/
 
      a. Building the Docker Image:
 
-       ```bash
-        docker build -t RLUS-BINARY-SEARCH .
-       ```
+   ```bash
+    docker build -t RLUS-BINARY-SEARCH .
+   ```
        
      b. Run the RLUS-BINARY-SEARCH Example: Inside the container or locally (if dependencies are installed):
        
