@@ -54,6 +54,10 @@ Quick Start (Using RLUS-BINARY-SEARCH as an Example)
  cd RLUS/RLUS-BINARY-SEARCH
 ```
 
+```bash
+ cd RLUS/RLUS-BINARY-SEARCH
+```
+
 2. Set up the environment: Use Docker for a consistent and isolated environment:
 
   a. Building the Docker Image:
@@ -67,7 +71,8 @@ Quick Start (Using RLUS-BINARY-SEARCH as an Example)
    ```bash
     # Windows
     docker run -v %cd%:/app RLUS-BINARY-SEARCH
-
+   ```
+   ```bash
     # Linux
       docker run -v $(pwd):/app RLUS-BINARY-SEARCH
    ```
