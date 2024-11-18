@@ -48,8 +48,8 @@ Quick Start (Using RLUS-BINARY-SEARCH as an Example)
    
    ```bash
     git clone https://github.com/armanalaa/RLUS.git
-      ```
-      ```bash
+   ```
+   ```bash
     cd RLUS/RLUS-BINARY-SEARCH
    ```
    
@@ -73,13 +73,15 @@ Quick Start (Using RLUS-BINARY-SEARCH as an Example)
    ```
    ```bash
     # Linux
-      docker run -v $(pwd):/app RLUS-BINARY-SEARCH
+    docker run -v $(pwd):/app RLUS-BINARY-SEARCH
    ```
 
 **Check Live Log**
 
 ```bash
 docker logs -f RLUS-BINARY-SEARCH # Stream live logs from the Docker container.
+```
+```bash
 docker logs RLUS-BINARY-SEARCH | tail -n 100 # retrieve the last 100 lines of logs from the RLUS-BINARY-SEARCH Docker container, aiding in monitoring and debugging
 ```
 
@@ -88,11 +90,10 @@ docker logs RLUS-BINARY-SEARCH | tail -n 100 # retrieve the last 100 lines of lo
 
  ```bash    
  sudo docker cp RLUS-BINARY-SEARCH:/app/results .
-
-    ```
-   ```bash
+ ```
+ ```bash
  sudo docker cp RLUS-BINARY-SEARCH:/app/logs .
-    ```
+ ```
 
   - The commands copy the results and log directories from the /app path inside the RLUS-BINARY-SEARCH Docker container to the current directory on your host system.
   - This lets you access the container's output files directly on your local machine.
