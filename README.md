@@ -80,38 +80,38 @@ project/
 
   a. Building the Docker Image:
 
-   ```bash
-    docker build -t RLUS-BINARY-SEARCH .
-   ```
+    ```bash
+     docker build -t RLUS-BINARY-SEARCH .
+    ```
     
   b. Run the RLUS-BINARY-SEARCH Example: Inside the container or locally (if dependencies are installed):
     
-   ```bash
-    # Windows
-    docker run -v %cd%:/app RLUS-BINARY-SEARCH
-   ```
-   ```bash
-    # Linux
-    docker run -v $(pwd):/app RLUS-BINARY-SEARCH
-   ```
+    ```bash
+     # Windows
+     docker run -v %cd%:/app RLUS-BINARY-SEARCH
+    ```
+    ```bash
+     # Linux
+     docker run -v $(pwd):/app RLUS-BINARY-SEARCH
+    ```
 
 3. Check Live Log*
 
-   ```bash
-   docker logs -f RLUS-BINARY-SEARCH # Stream live logs from the Docker container.
-   ```
-   ```bash
-   docker logs RLUS-BINARY-SEARCH | tail -n 100 # retrieve the last 100 lines of logs from the RLUS-BINARY-SEARCH Docker container, aiding in monitoring and debugging
-   ```
+    ```bash
+    docker logs -f RLUS-BINARY-SEARCH # Stream live logs from the Docker container.
+    ```
+    ```bash
+    docker logs RLUS-BINARY-SEARCH | tail -n 100 # retrieve the last 100 lines of logs from the RLUS-BINARY-SEARCH Docker container, aiding in monitoring and debugging
+    ```
  
 4. Check Results
 
-  ```bash    
-  sudo docker cp RLUS-BINARY-SEARCH:/app/results .
+   ```bash    
+   sudo docker cp RLUS-BINARY-SEARCH:/app/results .
+   ```
+   ```bash
+   sudo docker cp RLUS-BINARY-SEARCH:/app/logs .
   ```
-  ```bash
-  sudo docker cp RLUS-BINARY-SEARCH:/app/logs .
- ```
 
   - The commands copy the results and log directories from the /app path inside the RLUS-BINARY-SEARCH Docker container to the current directory on your host system.
   - This lets you access the container's output files directly on your local machine.
