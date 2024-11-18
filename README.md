@@ -58,27 +58,27 @@ Quick Start (Using RLUS-BINARY-SEARCH as an Example)
 
   a. Building the Docker Image:
 
+   ```bash
     docker build -t RLUS-BINARY-SEARCH .
+   ```
     
   b. Run the RLUS-BINARY-SEARCH Example: Inside the container or locally (if dependencies are installed):
     
-  - For Windows users:
-    
-    - docker run -v %cd%:/app RLUS-BINARY-SEARCH
-        
-  - For Linux users:
-    
-    - docker run -v $(pwd):/app RLUS-BINARY-SEARCH
+   ```bash
+    # Windows
+    docker run -v %cd%:/app RLUS-BINARY-SEARCH
+
+    # Linux
+      docker run -v $(pwd):/app RLUS-BINARY-SEARCH
+   ```
 
 **Check Live Log**
 
-- docker logs -f RLUS-BINARY-SEARCH
+```bash
+docker logs -f RLUS-BINARY-SEARCH # Stream live logs from the Docker container.
+docker logs RLUS-BINARY-SEARCH | tail -n 100 # retrieve the last 100 lines of logs from the RLUS-BINARY-SEARCH Docker container, aiding in monitoring and debugging
+```
 
-  - fetches the complete log output from the Docker container named RLUS-BINARY-SEARCH.
-
-- docker logs RLUS-BINARY-SEARCH | tail -n 100
-
-  - retrieves the last 100 lines of logs from the RLUS-BINARY-SEARCH Docker container, aiding in monitoring and debugging.
  
 **Check Results**
      
@@ -86,7 +86,7 @@ Quick Start (Using RLUS-BINARY-SEARCH as an Example)
 - sudo docker cp RLUS-BINARY-SEARCH:/app/logs .
 
   - The commands copy the results and log directories from the /app path inside the RLUS-BINARY-SEARCH Docker container to the current directory on your host system.
-  - This allows you to access the container's output files directly on your local machine.
+  - This lets you access the container's output files directly on your local machine.
   - In the results folder, the sample size (rho) values in the .csv format is saved.
   - In the logs folder, the execution times in the .text format is saved.
  
